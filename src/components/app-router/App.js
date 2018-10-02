@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import HomeHeader from './HomeHeader';
-// import HomeHeader from '../header/HomeHeader';
+import HomeHeader from '../header/HomeHeader';
 // import SimpleSlider from '../header/SimpleSlider';
 import Slideshow from 'react-slidez';
 
@@ -12,28 +12,15 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Slideshow
-          showIndex
-          showArrows
-          autoplay
-          enableKeyboard
-          useDotIndex
-          slideInterval={5000}
-          defaultIndex={1}
-          slides={[
-            alvaro,
-            aziz,
-            kenny,
-            // '../../assets/images/alvaro-mendoza-602538-unsplash.jpg',
-            // '../../assets/images/aziz-acharki-549137-unsplash.jpg',
-            // '../../assets/images/kenny-webster-559402-unsplash.jpg'
-          ]}
-          effect={'fade'}
-          height={'100%'}
-          width={'100%'}
-        />
+        <HomeHeader/>
         
-        <h1 style={{textAlign: "center"}}>First 11 Academy Project</h1>
+
+        <div style={{height: '60vh', zIndex: 9999}}>
+          <h1 style={{textAlign: "center"}}>First 11 Academy Project</h1>
+        </div>
+        
+      
+        
       </div>
     );
   }

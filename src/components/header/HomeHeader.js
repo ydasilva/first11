@@ -4,6 +4,12 @@ import Slider from 'react-slick';
 import HeaderTop from './HeaderTop';
 import seeds from '../../assets/static/seeds.json';
 
+import Slideshow from 'react-slidez';
+
+import alvaro from '../../assets/images/alvaro-mendoza-602538-unsplash.jpg';
+import aziz from '../../assets/images/aziz-acharki-549137-unsplash.jpg';
+import kenny from '../../assets/images/kenny-webster-559402-unsplash.jpg';
+
 // import headers from '../header/headers.css';
 // const header = headers.homeHeader;
 const header = {
@@ -253,7 +259,33 @@ const HomeHeader = () => (
                     <div className="medium-2" style={{height: ''}}/>
                     <div className="small-12 medium-8" style={{background: ""}}>
 
-                        <Animation />
+
+                        <div style={{backgroundColor: "red", padding: '5px'}}> 
+          <Slideshow
+          style={{width: '100%', height: '100%'}}
+            // showIndex
+            showArrows={false}
+            autoplay
+            enableKeyboard
+            useDotIndex
+            slideInterval={6000}
+            defaultIndex={0}
+            slides={[
+              alvaro,
+              aziz,
+              kenny,
+              // '../../assets/images/alvaro-mendoza-602538-unsplash.jpg',
+              // '../../assets/images/aziz-acharki-549137-unsplash.jpg',
+              // '../../assets/images/kenny-webster-559402-unsplash.jpg'
+            ]}
+            effect={'fade'}
+            height={'40%'}
+            width={'65%'}
+          >
+          </Slideshow>
+        </div>
+
+                        {/* <Animation /> */}
                         <div style={{display: 'none'}}>
                             {/*<img style={header.content.artwork} src={require("../assets/art-work-for-media.png")} alt=""/>*/}
                             <div style={{ boxShadow: "0 0 0px grey", borderTopLeftRadius: "0px", borderTopRightRadius: "0px"}}>
