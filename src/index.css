@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -11,4 +11,255 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif !important;
 }
+
+button {
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0) !important;
+}
+
+button:hover {
+  transform: translateY(-3px) !important;
+}
+
+p {
+  background-color: white;
+}
+
+.logo {
+  animation: beat .90s infinite alternate;
+  transform-origin: center;
+}
+
+.Header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.HeaderScrolled {
+  position: fixed;
+  padding-top: 10px;
+  /*margin-top: 50px;*/
+  /*background: url('assets/svg/background-scroll.svg');*/
+  background-color: rgba(247, 247, 247, .95);
+  /*background-color: rgba(219, 219, 219, 1);*/
+  box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.16);
+  /*backdrop-filter: blur(20px);*/
+}
+
+/* Heart beat animation */
+@keyframes beat {
+  to {
+      transform: scale(1.1);
+  }
+}
+
+.curatedPackCard {
+  display: block;
+  border: solid 2px #fff;
+  width: 100%;
+/* // width: 283.5 px; */
+  height: auto;
+/* / / height: 313.6 px; */
+  border-radius: 13.5px;
+  background-color: #ffffff;
+  padding: 0 30px;
+  /*box-shadow: 0 4px 34px 0 rgba(0, 0, 0, 0.26);*/
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.curatedPackCard:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+.storyCard {
+  display: block;
+  border: solid 0.1px rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
+  max-width: 336px;
+/* / / width: 283.5 px; */
+  height: auto;
+  box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.36);
+  border-radius: 13.5px;
+  padding: 0 30px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.storyCard:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/*outlineButton*/
+button.outlineButton {
+  background-color: #ffffff;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 3px solid #28396e;
+  display: inline-block;
+  cursor: pointer;
+  color: #28396e;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  text-transform: uppercase;
+  width: 160px;
+  margin: 5px;
+}
+
+button.outlineButton:hover {
+  background-color: #f6f6f6;
+  /*background-color: pink;*/
+
+}
+
+button.outlineButton:active {
+  position: relative;
+  top: 1px;
+}
+
+button.outlineButton:focus {
+  outline: 0;
+}
+
+/*filledButton*/
+button.filledButton {
+  background-color: #28396e;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.36);
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 13px 23px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 160px;
+  margin: 5px;
+}
+
+button.filledButton:hover {
+  background-color: #3b4e87;
+}
+
+button.filledButton:active {
+  position: relative;
+  top: 1px;
+}
+
+button.filledButton:focus {
+  outline: 0;
+}
+
+/*shadowButton*/
+button.shadowButton {
+  -moz-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.36);
+  background-color: #fff;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;
+  color: #28396e;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 160px;
+  margin: 5px;
+}
+
+button.shadowButton:hover {
+  background-color: #f6f6f6;
+}
+
+button.shadowButton:active {
+  position: relative;
+  top: 1px;
+}
+
+button.shadowButton:focus {
+  outline: 0;
+}
+
+/*Typography*/
+.text-size-50 {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.text-size-35 {
+  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.text-size-17 {
+  font-size: 17px;
+}
+
+.text-style-bold {
+  font-weight: 600;
+}
+
+.text-color-mediumblue {
+  color: #3B4E87;
+}
+
+.text-color-darkblue {
+  color: #28396E;
+}
+
+.text-color-black {
+  color: #3B3B3B;
+}
+
+.text-color-white {
+  color: #FFF;
+}
+
+.text-color-gray {
+  color: #777777;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.storyCard p {
+  background-color: transparent;
+}
+
+.background {
+  width: 100%;
+  background: url('assets/svg/background-pattern.svg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+  /*For Mobile*/
+  .background {
+      background: none;
+  }
+}
+
