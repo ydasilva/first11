@@ -4,7 +4,10 @@ import AppWrapper from './components/app-router/AppWrapper';
 import * as serviceWorker from './serviceWorker';
 import './assets/foundation/foundation.css';
 
+// import Slideshow from './components/reactSlidez/index';
+
 ReactDOM.render(<AppWrapper />, document.getElementById('root'));
+// ReactDOM.render(<Slideshow />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,26 +1,20 @@
 import React, { Component } from 'react';
-// import HomeHeader from './HomeHeader';
 import HomeHeader from '../header/HomeHeader';
-// import SimpleSlider from '../header/SimpleSlider';
-import Slideshow from 'react-slidez';
-
-import alvaro from '../../assets/images/alvaro-mendoza-602538-unsplash.jpg';
-import aziz from '../../assets/images/aziz-acharki-549137-unsplash.jpg';
-import kenny from '../../assets/images/kenny-webster-559402-unsplash.jpg';
+import Waves from '../../components/waves/Waves';
 
 class App extends Component {
   render() {
     return (
       <div>
         <HomeHeader/>
-        
-
-        <div style={{height: '60vh', zIndex: 9999}}>
-          <h1 style={{textAlign: "center"}}>First 11 Academy Project</h1>
+        <Waves/>
+        <div className="grid-container">
+          <div className="grid-x">
+            <div className="small-12">
+              <h1 className="text-center">First 11 Academy Project</h1>
+            </div>
+          </div>
         </div>
-        
-      
-        
       </div>
     );
   }
