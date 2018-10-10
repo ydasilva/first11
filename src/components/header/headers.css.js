@@ -69,7 +69,7 @@ export default {
                 },
             },
             shadowText: {
-                // fontFamily: "Montserrat",
+
                 fontSize: "24px",
                 fontWeight: "800",
                 letterSpacing: "-1.5px",
@@ -79,7 +79,7 @@ export default {
                 textShadow: "0 1px 6px rgba(0, 0, 0, 0.5)",
             },
             text: {
-                // fontFamily: "Montserrat",
+
                 // fontSize: "24px",
                 fontSize: "20px",
                 fontWeight: "bold",
@@ -89,7 +89,7 @@ export default {
                 // colors: "#ffffff",
             },
             smallShadowText: {
-                // fontFamily: "Montserrat",
+
                 fontSize: "20px",
                 fontWeight: "800",
                 letterSpacing: "-1.5px",
@@ -99,7 +99,7 @@ export default {
                 textShadow: "0 1px 6px rgba(0, 0, 0, 0.5)",
             },
             smallText: {
-                fontFamily: "Montserrat",
+
                 fontSize: "25px",
                 fontWeight: "800",
                 letterSpacing: "-1.5px",

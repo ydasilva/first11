@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
-
 import headers from './headers.css';
+import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 const headerTop = headers.headerTop;
 
 const HeaderTop = () => (
@@ -12,7 +12,7 @@ const HeaderTop = () => (
                 {/*code for small screens*/}
                 <div className="grid-x show-for-small-only">
                     <div className="cell small-12" style={{paddingBottom: "10px"}}>
-                        <div style={{background: "white", borderRadius: "11.7px", width: "164px", height: "auto", display: "block", margin: "0 auto", padding: "10px" }}>
+                        <div style={{background: "", borderRadius: "11.7px", width: "164px", height: "auto", display: "block", margin: "0 auto", padding: "10px" }}>
                             <NavLink style={{ textDecoration: 'none' }} to='/' activeStyle={{color: 'white'}}>
                                 <img style={{display: "block", margin: "0px",}} src={require("../../assets/images/logo.png")} alt=""/>
                             </NavLink>
@@ -20,41 +20,26 @@ const HeaderTop = () => (
                         <div style={headerTop.smallSpaceBar}/>
                     </div>
                     <div className="small-6 cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: "none", color: "lightpink" }} to="/customize" activeStyle={{color: 'white'}}>
-                            <h1 style={headerTop.appBar.smallText}>Customize*</h1>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#What We Do' activeStyle={{color: 'white'}}>
+                            <span style={headerTop.appBar.smallText}>What We Do</span>
                         </NavLink>
                     </div>
-
                     <div className="small-6 cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: "none", color: "lightpink" }} to="/apps" activeStyle={{color: 'white'}} >
-                            <h1 style={headerTop.appBar.smallText}>Apps</h1>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#register' activeStyle={{color: 'white'}}>
+                            <span style={headerTop.appBar.smallText}>Register</span>
                         </NavLink>
                     </div>
-
                     <div className="small-6 cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: "none", color: "lightpink" }} to="/stories" activeStyle={{color: 'white'}}>
-                            <h1 style={headerTop.appBar.smallText}>Stories</h1>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#upcoming' activeStyle={{color: 'white'}}>
+                            <span style={headerTop.appBar.smallText}>Events</span>
                         </NavLink>
                     </div>
-
                     <div className="small-6 cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: "none", color: "lightpink" }} to="/creators" activeStyle={{color: 'white'}}>
-                            <h1 style={headerTop.appBar.smallText}>Creators</h1>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#donate' activeStyle={{color: 'white'}}>
+                            <span style={headerTop.appBar.smallText}>Donate</span>
                         </NavLink>
                     </div>
-
-                    <div className="small-6 cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: "none", color: "lightpink" }} to="/brands" activeStyle={{color: 'white'}}>
-                            <h1 style={headerTop.appBar.smallText}>Brands</h1>
-                        </NavLink>
-                    </div>
-
-                    <div className="small-6 cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: "none", color: "lightpink" }} to="/games" activeStyle={{color: 'white'}}>
-                            <h1 style={headerTop.appBar.smallText}>Games</h1>
-                        </NavLink>
-
-                    </div>
+                
                 </div>
 
                 {/*code for regular screen*/}
@@ -68,30 +53,37 @@ const HeaderTop = () => (
                     <div style={{width: "20%"}}/>
                     
                     <div className="auto cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: 'none', color: "white" }} to='/customize' activeStyle={{color: 'white'}}>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#What-We-Do' activeStyle={{color: 'white'}}>
                             <span style={headerTop.appBar.text}>What We Do</span>
                         </NavLink>
                     </div>
                     <div className="auto cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: 'none', color: "white" }} to='/apps' activeStyle={{color: 'white'}}>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#register' activeStyle={{color: 'white'}}>
                             <span style={headerTop.appBar.text}>Register</span>
                         </NavLink>
                     </div>
                     <div className="auto cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: 'none', color: "white" }} to='/creators' activeStyle={{color: 'white'}}>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#upcoming' activeStyle={{color: 'white'}}>
                             <span style={headerTop.appBar.text}>Upcoming Events</span>
                         </NavLink>
                     </div>
                     <div className="auto cell text-center" style={{background: ""}}>
-                        <NavLink style={{ textDecoration: 'none', color: "white" }} to='/games' activeStyle={{color: 'white'}}>
+                        <NavLink style={{ textDecoration: 'none', color: "black" }} to='/#donate' activeStyle={{color: 'white'}}>
                             <span style={headerTop.appBar.text}>Donate</span>
                         </NavLink>
                     </div>
+                    <div className="auto cell text-center" style={{background: ""}}>
+                    <DropdownMenu triggerType='text' trigger='Settings'>
+                        <MenuItem text='Home' location='/clickevent' />
+                        <MenuItem text='Edit Profile' location='/clickevent' />
+                        <MenuItem text='Delete Account' onClick={() => {}} />
+                        <MenuItem text='Logout' location='/clickevent' />
+                    </DropdownMenu>
+                    </div>
+
                 </div>
             </div>
         </div>
 );
 
-export default HeaderTop
-
-
+export default HeaderTop;
