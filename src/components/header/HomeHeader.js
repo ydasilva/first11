@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import tournament2 from '../../assets/images/tournament2.png';
-import { ButtonToolbar, DropdownButton, MenuItem } from 'react-bootstrap-dropdown-menu';
+// import { ButtonToolbar, DropdownButton, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 const header = {
     background: {

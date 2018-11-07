@@ -35,26 +35,61 @@ export default class Example extends React.Component {
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
-                                    Options
+                                    Who We Are
                                 </DropdownToggle>
                                 <DropdownMenu right>
-                                    <DropdownItem>
-                                        Option 1
+                                    <DropdownItem href="/AboutUs">
+                                        About Us
                                     </DropdownItem>
-                                    <DropdownItem>
-                                        Option 2
+                                    <DropdownItem href="/TheTeam">
+                                        The Team
                                     </DropdownItem>
                                     <DropdownItem divider />
-                                    <DropdownItem>
-                                        Reset
+                                    <DropdownItem href="/OurPartners">
+                                        Our Partners
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>
+                                    What We Do
+                                </DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem href="/Education">
+                                        Education
+                                    </DropdownItem>
+                                    <DropdownItem href="/Football">
+                                        Football
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                            <NavItem>
+                                <NavLink href="/OurProjects">Our Projects</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/Profiles">Profiles</NavLink>
+                            </NavItem>
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret href="/GetInvolved">
+                                    Get Involved
+                                </DropdownToggle>
+                                <DropdownMenu right href="/Donate">
+                                    <DropdownItem href="/Donate">
+                                        Donate
+                                    </DropdownItem>
+                                    <DropdownItem href="/PartnerWithUs">
+                                        Partner With Us
+                                    </DropdownItem>
+                                    <DropdownItem href="/SupportAProject">
+                                        Support ...
+                                    </DropdownItem>
+                                    <DropdownItem href="/BecomeAVolunteer">
+                                        Become ...
+                                    </DropdownItem>
+                                    <DropdownItem href="/ContactUs">
+                                        Contact ...
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
