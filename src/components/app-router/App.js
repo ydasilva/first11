@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import HomeHeader from '../header/HomeHeader';
 import Waves from '../../components/waves/Waves';
+import Home from '../../pages/home/Home';
+import Footer from '../footer/Footer';
 
 class App extends Component {
   render() {
@@ -8,13 +10,8 @@ class App extends Component {
       <div>
         <HomeHeader/>
         <Waves/>
-        <div className="grid-container">
-          <div className="grid-x">
-            <div className="small-12">
-              <h1 className="text-center">First 11 Academy Project</h1>
-            </div>
-          </div>
-        </div>
+        <Home/>
+        <Footer/>
       </div>
     );
   }

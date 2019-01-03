@@ -11,6 +11,9 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
+// import logo from '../../assets/images/logo.png';
+import psfalogo from '../../assets/images/psfa logo4.png';
+
 
 export default class Example extends React.Component {
     constructor(props) {
@@ -27,16 +30,35 @@ export default class Example extends React.Component {
         });
     }
     render() {
+        const {mode} = this.props;
         return (
             <div>
-                <Navbar color="light" light expand="md">
-                {/*<Navbar className="grid-container">*/}
-                    <NavbarBrand href="/">reactstrap</NavbarBrand>
+                <Navbar style={{fontWeight: 'bold'}} color="faded" light={true} dark={mode==='light'} expand="md">
+                    <NavbarBrand  href="/" 
+                        style={{
+                            width: '80px', 
+                            height: '80px',
+                            boxShadow: '0px 3px 3px rgba(0, 0, 0, .2)', 
+                            borderRadius: '80px',
+                            backgroundColor: 'white', 
+                        }}>
+                        <img  src={psfalogo} alt="psfalogo"
+                            style={{
+                                // width: '60px', 
+                                // height: 'auto', 
+                                padding: '5px 10px',
+                                
+                                // borderRadius: '70px', 
+                                // backgroundColor: 'grey'
+                            }}/>
+                    </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
+                                <DropdownToggle nav caret 
+                                    // style={{color: 'white'}}
+                                >
                                     Who We Are
                                 </DropdownToggle>
                                 <DropdownMenu right>
@@ -66,7 +88,7 @@ export default class Example extends React.Component {
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                             <NavItem>
-                                <NavLink href="/OurProjects">Our Projects</NavLink>
+                                <NavLink href="/Projects">Our Projects</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="/Profiles">Profiles</NavLink>
@@ -82,21 +104,30 @@ export default class Example extends React.Component {
                                     <DropdownItem href="/PartnerWithUs">
                                         Partner With Us
                                     </DropdownItem>
-                                    <DropdownItem href="/SupportAProject">
-                                        Support ...
-                                    </DropdownItem>
                                     <DropdownItem href="/BecomeAVolunteer">
-                                        Become ...
+                                        Become A Volunteer
                                     </DropdownItem>
                                     <DropdownItem href="/ContactUs">
-                                        Contact ...
+                                        Contact Us
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
+                            <NavItem style={{margin: '0 auto',}}>
+                                <NavLink style={{
+                                    backgroundColor: '#FF0079',
+                                    boxShadow: '0px 3px 3px rgba(0, 0, 0, .2)',  
+                                    borderRadius: '5px', color: 'white',
+                                    width: '150px',
+                                    height: '50px',
+                                    lineHeight: '30px',
+                                    fontSize: '20px',
+                                    textAlign: 'center',
+                                    // fontWeight: 'bold',
+                                    }} href="/Donate">Support</NavLink>
+                            </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>
-                {/*</Navbar>*/}
             </div>
         );
     }

@@ -1,14 +1,36 @@
 import React, { Component } from 'react';
-import HomeHeader from '../../components/header/HomeHeader';
-import Mask1 from './../../assets/images/Mask Group 1.png'
-import Mask2 from './../../assets/images/Mask Group 2.png'
-import Mask3 from './../../assets/images/Mask Group 3.png'
-import Mask4 from './../../assets/images/Mask Group 4.png'
-import Mask5 from './../../assets/images/Mask Group 5.png'
+import Navbar       from '../../components/header/Navbar';
+import Footer       from '../../components/footer/Footer';
+import TeamCarousel from '../../components/carousel/TeamCarousel';
+import LogoText     from '../../assets/images/team/Logo-Just-Text.png';
+import TeamOne      from '../../assets/images/team/Team-1.png';
+import TeamTwo      from '../../assets/images/team/Team-2.png';
+import TeamThree    from '../../assets/images/team/Team-3.png';
+import TeamFour     from '../../assets/images/team/Team-4.png';
+import TeamFive     from '../../assets/images/team/Team-5.png';
+import TeamSix      from '../../assets/images/team/Team-6.png';
 
 const styles = {
-    teamImgs: {
-        padding: "10px"
+
+    gradientBackground: {
+        height: "auto",
+        backgroundImage: "linear-gradient(to bottom, #F89D1B, #7D0102)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat, repeat",
+    },
+    teamImage: {
+        padding: '10px',
+    },
+    teamName: {
+        fontWeight: 'bold',
+        fontSize: '14px',
+        margin: '0px'
+    },
+    teamDesc: {
+        fontSize: '16px',
+        fontWeight: '300',
+        
     }
 }
 
@@ -17,54 +39,169 @@ class TheTeam extends Component {
     render() {
         return(
             <div>
-                <HomeHeader/>
+                <div style={styles.gradientBackground}>
+                    <div>
+                        <div className="smallSpaceBar"/>
+
+                        <div className="show-for-medium-only">
+                            {/* <Navbar mode="light"/>  */}
+                            <Navbar mode="dark"/> 
+                        </div>
+
+                        <div className="hide-for-medium-only">
+                            <div className="grid-container">
+                                {/* <Navbar mode="light"/> */}
+                                <Navbar mode="dark"/> 
+                            </div>
+                        </div>
+
+                        <div className="smallSpaceBar"/>
+                    </div>
+
+                    <div className="grid-container grid-x">
+                        <div className="medium-2 hide-for-small-only"/>
+                        <div className="medium-8 small-12 grid-x">
+                            <div className="small-12">
+                                <TeamCarousel />
+                            </div>
+                            
+                            <div className="spaceBar"/>
+                            <div className="spaceBar"/>
+                            
+                        </div>
+                        <div className="medium-2 hide-for-small-only"/>
+                    </div>
+
+                </div>
+
                 <div className="grid-container grid-x text-center">
                     <div className="spaceBar"/>
-                    <div className="small-12">
-                        <h1>TheTeam</h1>
+                    <div className="small-10 small-offset-1 medium-8 medium-offset-2 grid-x">
+                        <div className="small-8 small-offset-2">
+                            <img src={LogoText} alt="LogoText"/>
+                        </div>
+
+                        <div className="spaceBar"/>
+
+                        <div className="small-12 medium-6 large-4">
+                            <img style={styles.teamImage} src={TeamOne} alt="TeamOne"/>
+                            <p style={styles.teamName}>Frank Kweku Hayford</p>
+                            <p style={styles.teamDesc}>President</p>
+                        </div>
+                        <div className="small-12 medium-6 large-4 text-center">
+                            <img style={styles.teamImage} src={TeamTwo} alt="TeamTwo"/>
+                            <p style={styles.teamName}>Kingsley Abeyie</p>
+                            <p style={styles.teamDesc}>Director</p>
+                        </div>
+                        <div className="small-12 medium-6 large-4">
+                            <img style={styles.teamImage} src={TeamThree} alt="TeamThree"/>
+                            <p style={styles.teamName}>Raymond Gulutu</p>
+                            <p style={styles.teamDesc}>Int. Sports/Education Director</p>
+                        </div>
+                        <div className="small-12 medium-6 large-4">
+                            <img style={styles.teamImage} src={TeamFour} alt="TeamFour"/>
+                            <p style={styles.teamName}>Fred Edem Ajoro</p>
+                            <p style={styles.teamDesc}>Coordinator</p>
+                        </div>
+                        <div className="small-12 medium-6 large-4">
+                            <img style={styles.teamImage} src={TeamFive} alt="TeamFive"/>
+                            <p style={styles.teamName}>Elizabeth Ofosu</p>
+                            <p style={styles.teamDesc}>Public Relations Officer</p>
+                        </div>
+                        <div className="small-12 medium-6 large-4">
+                            <img style={styles.teamImage} src={TeamSix} alt="TeamSix"/>
+                            <p style={styles.teamName}>Thomas Oduro Ntim</p>
+                            <p style={styles.teamDesc}>Operations Manager</p>
+                        </div>
+
+
+                        <div className="small-12">
+                            <div className="smallSpaceBar"/>
+                            <div className="spaceBar" style={{borderTop: 'solid 1px rgba(0, 0, 0, 0.3)'}}/>
+                        </div>
+
+
+                        <div className="small-8 small-offset-2">
+                            <img  style={{width: '100%'}} src={TeamOne} alt="TeamOne"/>
+                            <div className="smallSpaceBar"/>
+                            <p style={styles.teamName}>Frank Kweku Hayford</p>
+                            <p style={styles.teamDesc}>President</p>
+                            <p>
+                                An energetic young man who strives to make a 
+                                difference in the lives of young but needy 
+                                talents in Africa.
+                            </p>
+                            <div className="spaceBar"/>
+                        </div>
+
+                        <div className="small-8 small-offset-2">
+                            <img  style={{width: '100%'}} src={TeamTwo} alt="TeamTwo"/>
+                            <div className="smallSpaceBar"/>
+                            <p style={styles.teamName}>Kingsley Abeyie</p>
+                            <p style={styles.teamDesc}>Director</p>
+                            <p>
+                                Lorem Ipsum...
+                            </p>
+                            <div className="spaceBar"/>
+                        </div>
+
+                        <div className="small-8 small-offset-2">
+                            <img  style={{width: '100%'}} src={TeamThree} alt="TeamThree"/>
+                            <div className="smallSpaceBar"/>
+                            <p style={styles.teamName}>Raymond Gulutu</p>
+                            <p style={styles.teamDesc}>Int. Sports/Education Director</p>
+                            <p>
+                                Lorem Ipsum...
+                            </p>
+                            <div className="spaceBar"/>
+                        </div>
+
+                        <div className="small-8 small-offset-2">
+                            <img  style={{width: '100%'}} src={TeamFour} alt="TeamFour"/>
+                            <div className="smallSpaceBar"/>
+                            <p style={styles.teamName}>Fred Edem Ajoro</p>
+                            <p style={styles.teamDesc}>Coordinator</p>
+                            <p>
+                                Lorem Ipsum...
+                            </p>
+                            <div className="spaceBar"/>
+                        </div>
+                        
+                        <div className="small-8 small-offset-2">
+                            <img  style={{width: '100%'}} src={TeamFive} alt="TeamFive"/>
+                            <div className="smallSpaceBar"/>
+                            <p style={styles.teamName}>Elizabeth Ofosu</p>
+                            <p style={styles.teamDesc}>Public Relations Officer</p>
+                            <p>
+                                Elizabeth Owusua Ofosu is a Master’s graduate in Development 
+                                Management from the University of Birmingham, UK. She has 8 years 
+                                cumulative administrative experience, with experience in 
+                                disseminating information and effective communication. 
+                                She is currently an assistant manager at the Forestry 
+                                commission as well as the CEO of El Anfitrion. She is a 
+                                lively individual with very strict work ethics and who 
+                                follows a project through to the end.
+                            </p>
+                            <div className="spaceBar"/>
+                        </div>
+
+                        <div className="small-8 small-offset-2">
+                            <img  style={{width: '100%'}} src={TeamSix} alt="TeamSix"/>
+                            <div className="smallSpaceBar"/>
+                            <p style={styles.teamName}>Thomas Oduro Ntim</p>
+                            <p style={styles.teamDesc}>Operations Manager</p>
+                            <p>
+                                Lorem Ipsum...
+                            </p>
+                            <div className="spaceBar"/>
+                        </div>
                     </div>
-                    <div className="smallSpaceBar"/>
-                    <div className="small-12 grid-x">
-                        <div className="medium-1 hide-for-small-only"></div>
-                        <div className="medium-2 small-12"><img src={Mask1} style={styles.teamImgs} alt="Mask1"/></div>
-                        <div className="medium-2 small-12"><img src={Mask2} style={styles.teamImgs} alt="Mask2"/></div>
-                        <div className="medium-2 small-12"><img src={Mask3} style={styles.teamImgs} alt="Mask3"/></div>
-                        <div className="medium-2 small-12"><img src={Mask4} style={styles.teamImgs} alt="Mask4"/></div>
-                        <div className="medium-2 small-12"><img src={Mask5} style={styles.teamImgs} alt="Mask5"/></div>
-                        <div className="medium-1 hide-for-small-only"></div>
-                    </div>
-                    <div className="small-12 grid-x">
-                        <div className="medium-1 hide-for-small-only"></div>
-                        <div className="medium-2 small-12">
-                            <h5><strong>Frank Kweku Hayford</strong></h5>
-                            <h6><i>CEO of BTC Sports Network and founding partner of BTC Sports Foundation</i></h6>
-                            <p>An energetic young man who strives to make a difference in the lives of young but needy talents in Africa</p>
-                        </div>
-                        <div className="medium-2 small-12">
-                            <h5><strong>Kingsley Abeyie</strong></h5>
-                            <h6><i>Founding partner for the BTC Sports Foundation/NGO</i></h6>
-                            <p>~</p>
-                        </div>
-                        <div className="medium-2 small-12">
-                            <h5><strong>Raymond Gulutu</strong></h5>
-                            <h6><i>Founder Independant Talent Idenfication (iTi)
-Partner / International Relations Manager</i></h6>
-                            <p>An English Football Association Advanced Level 4 Qualified Football Psychologist who supports/works with players</p>
-                        </div>
-                        <div className="medium-2 small-12">
-                            <h5><strong>Fred Edem Ajoro</strong></h5>
-                            <h6><i>Coordinator for the BTC Sports Foundation</i></h6>
-                            <p>Ensures the smooth running of various projects of the Foundation</p>
-                        </div>
-                        <div className="medium-2 small-12">
-                            <h5><strong>Elizabeth Ofosu</strong></h5>
-                            <h6><i>Public Relations Officer</i></h6>
-                            <p>~</p>
-                        </div>
-                        <div className="medium-1 hide-for-small-only"></div>
-                    </div>
+
+                    
+                    
+                    <div className="spaceBar"/>
                 </div>
-                
+                <Footer/>
             </div>
         )
     }

@@ -16,6 +16,13 @@ import Football from '../../pages/what-we-do/Football';
 import OurPartners from '../../pages/who-we-are/OurPartners';
 import TheTeam from '../../pages/who-we-are/TheTeam';
 import AboutUs from '../../pages/who-we-are/AboutUs';
+import Profiles from '../../pages/home/Profiles';
+import Projects from '../../pages/home/Projects';
+import Community from '../../pages/home/Community';
+import SupportForm from '../../pages/get-involved/SupportForm';
+import FootballClubForm from '../../pages/get-involved/FootballClubForm';
+import ExchangeForm from '../../pages/get-involved/ExchangeForm';
+
 
 
 export default class AppWrapper extends Component {
@@ -34,6 +41,12 @@ export default class AppWrapper extends Component {
                     <Route exact path='/AboutUs' component={AboutUs} />
                     <Route exact path='/OurPartners' component={OurPartners} />
                     <Route exact path='/TheTeam' component={TheTeam} />
+                    <Route exact path='/Profiles' component={Profiles} />
+                    <Route exact path='/Projects' component={Projects} />
+                    <Route exact path='/Community' component={Community} />
+                    <Route exact path='/SupportForm' component={SupportForm} />
+                    <Route exact path='/FootballForm' component={FootballClubForm} />
+                    <Route exact path='/ExchangeForm' component={ExchangeForm} />
                 </Switch>
             </BrowserRouter>
         )

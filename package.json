@@ -10,11 +10,13 @@
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-dom": "^16.5.2",
+    "react-player": "^1.7.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.3",
     "react-slick": "^0.23.1",
     "react-slidez": "0.0.30",
-    "reactstrap": "^6.5.0"
+    "reactstrap": "^6.5.0",
+    "youtube-embed-video": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

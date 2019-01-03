@@ -21,7 +21,7 @@ export default class SimpleSlider extends Component {
           height={'100%'}
           width={'100%'}
         >
-        <h1>First 11 Academy</h1>
+        <h1 className='hide'>First 11 Academy</h1>
         </Slideshow>
       </div>
     );
