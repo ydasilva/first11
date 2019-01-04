@@ -151,46 +151,46 @@ class AboutUs extends Component {
                             </div>
                             <div className="large-8 medium-12">
                                 <p>
-                                    From my experiences first hand in Ghana, the high level of footballing potential 
-                                    of players of all ages is without question very high. However, sadly the frustrations 
-                                    and limitations for those with elite potential/ability face to further develop a 
-                                    pathway into professional football in the major footballing countries throughout the 
-                                    world, and in particular the UK and mainland Europe, which currently is a difficult 
-                                    and for the many unattainable.
+                                    From my experiences first hand in Ghana, the high level of footballing potential of 
+                                    players of all ages is without question very high. However, the frustrations and 
+                                    limitations that those with elite potential/ability face to further develop a pathway 
+                                    into professional football in the major footballing countries throughout the world, 
+                                    and in particular the UK and mainland Europe, makes it difficult, and for many, unattainable.
                                 </p>
                             </div>
 
                             <div className="small-12">
                                 
                                 <p>
-                                    It cannot be ignored particularly the difficulties adult players have to overcome to 
-                                    achieve an opportunity to play professional football in Europe, be it financial, 
-                                    logistical, visa/work permit authorization. Sadly as result many talented players 
-                                    will not achieve both their dream and potential.
+                                    The difficulties players have to overcome to achieve an opportunity to play professional 
+                                    football in Europe, be it financial, logistical, visa/work permit authorization, cannot 
+                                    be ignored. Sadly, as a result, many talented players will not achieve both their dream and potential.
                                 </p>
                                 <p>
-                                    I am committed to helping create a supported and managed pathway for those 
-                                    talented footballers to play at the highest level and in best clubs - leagues 
-                                    there ability can allow.
+                                    I am committed to helping create a supported and managed pathway for those talented footballers to play 
+                                    at the highest level and in the best clubs/ leagues their ability can allow.
+                                </p>
+                                <p className="text-left">
+                                    I believe that a key way to combat these difficulties is to create strong long term 
+                                    relationships with professional clubs that includes:
+                                    <ul>
+                                        <li>early talent identification, </li>
+                                        <li>education support, and </li>
+                                        <li>welfare support at source.</li>
+                                    </ul>
                                 </p>
                                 <p>
-                                    I believe that a key way to combat these difficulties is to create strong 
-                                    long term relationships with professional clubs that includes early talent 
-                                    identification, education support, and welfare support at source, that being 
-                                    in Ghana with a particular focus being those younger players aged from 7-14 
-                                    whereby they are supported with a view to attending the partnered club academy 
-                                    at frequent times for both the experience and development monitoring and then 
-                                    when the player is of an age if he has continued to develop at the required 
-                                    level, relocate to the place of that club and one hopes embark on the next 
-                                    phase of the development that being to obtain a scholarship.
+                                    In Ghana, a particular focus is given to younger players aged between 7-14, whereby they are supported 
+                                    with a view to attending the partnered club academy at frequent times for both the experience and 
+                                    development monitoring. Subsequently, when the player is of a certain age and has continued to 
+                                    develop to the required level, he is relocated to the club and one hopes, embark on the next 
+                                    phase of the development, which is to obtain a scholarship.
                                 </p>
                                 <p>
-                                    It is my aim in partnership with The Pathways Sports Foundation Africa (PSFA) 
-                                    to help build strong pathways for these bridges to be crossed and provide 
-                                    talented players with a structured and supportive opportunity.
+                                    It is my aim in partnership with The Pathways Sports Foundation Africa (PSFA), to help build strong pathways for these bridges 
+                                    to be crossed and provide talented players with a structured and supportive opportunity.
                                 </p>
                                 <h6><strong><i>Raymond Gulutu</i></strong></h6>
-                                {/* <h6>The Team</h6> */}
                             </div>
                         </div>
                     <div className="spaceBar"/>

@@ -24,12 +24,13 @@ class Home extends Component {
                 <div className="small-12 grid-x">
                     <div className="small-12 medium-8 medium-offset-2 text-center">
                         <p style={{fontSize: '1.2rem', padding: '20px'}}>
-                            From my experiences first hand in Ghana, the high level of footballing potential 
-                            of players of all ages is without question very high. However, sadly the frustrations 
-                            and limitations for those with elite potential/ability face to further develop a 
-                            pathway into professional football in the major footballing countries throughout the 
-                            world, and in particular the UK and mainland Europe, which currently is a difficult 
-                            and for the many …
+                        From my experiences first hand in Ghana, the high level of 
+                        footballing potential of players of all ages is without 
+                        question very high. However, the frustrations and limitations 
+                        that those with elite potential/ability face to further develop 
+                        a pathway into professional football in the major footballing 
+                        countries throughout the world, and in particular the UK and 
+                        mainland Europe, makes it difficult, and for many …
                         </p>
                     </div>
                     <div className="smallSpaceBar" />
@@ -171,10 +172,9 @@ class Home extends Component {
                                         backgroundColor: '#7F0000',
                                         border: 'solid 2px #FFF',
                                         boxShadow: '0px 3px 3px rgba(0, 0, 0, .2)',  
-                                        borderRadius: '5px',
+                                        borderRadius: '5px', margin: '15px auto',
                                         color: '#FFF', width: '60%',
                                         textAlign: 'center', fontWeight: 'bold',
-                                        margin: '15px auto',
                                     }} 
                                     href="/Donate"
                                 >

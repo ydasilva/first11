@@ -93,13 +93,19 @@ class OurPartners extends Component {
                         <h1>Sponsor an Event</h1>
                     </div>
                     <div className="small-12 medium-4" style={{backgroundColor: 'black', padding: '10px'}}>
-                        <a href="#tournament" style={{color: 'white'}}>A football tournament</a>
+                        <a href="https://drive.google.com/file/d/1M5i0H9Ojthv8UQgmJcSlFhchJyGIahU4/view?usp=sharing" 
+                            target="_blank" rel="noopener noreferrer"
+                            style={{color: 'white'}}>A football tournament</a>
                     </div>
                     <div className="small-12 medium-4" style={{backgroundColor: 'black', padding: '10px'}}>
-                        <a href="#Event" style={{color: 'white'}}>Educational Event</a>
+                        <a href="https://drive.google.com/file/d/1M5i0H9Ojthv8UQgmJcSlFhchJyGIahU4/view?usp=sharing" 
+                            target="_blank" rel="noopener noreferrer"
+                            style={{color: 'white'}}>Educational Event</a>
                     </div>
                     <div className="small-12 medium-4" style={{backgroundColor: 'black', padding: '10px'}}>
-                        <a href="#Competitions" style={{color: 'white'}}>Inter-schools Competitions</a>
+                        <a href="https://drive.google.com/file/d/1M5i0H9Ojthv8UQgmJcSlFhchJyGIahU4/view?usp=sharing" 
+                            target="_blank" rel="noopener noreferrer"
+                            style={{color: 'white'}}>Inter-schools Competitions</a>
                     </div>
                     <div className="small-12"><div className="smallSpaceBar"/></div>
                 </div>
