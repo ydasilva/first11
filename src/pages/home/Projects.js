@@ -100,7 +100,8 @@ class Projects extends Component {
 
                             <NavLink 
                                 style={styles.navlink} 
-                                href="/PartnerWithUs"
+                                target="_blank" rel="noopener noreferrer"
+                                href="https://drive.google.com/file/d/1TPmganhp0iHT0CYr2dQq_xA_B-yB7aFF/view?usp=sharing"
                             >
                                 Register
                             </NavLink>

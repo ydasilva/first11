@@ -7,6 +7,7 @@ import El from '../../assets/images/partners/El-Anfitron.png';
 import KS from '../../assets/images/partners/KS-Logo.png';
 import Silva from '../../assets/images/partners/Silva-fox.png';
 import Mega from '../../assets/images/partners/Mega.png';
+import Sunyani from '../../assets/images/partners/Sunyani Business School.jpg';
 
 class OurPartners extends Component {
 
@@ -61,6 +62,11 @@ class OurPartners extends Component {
                     <div className="small-12 medium-6 medium-offset-3">
                         <div className="spaceBar"/>
                         <img style={{width: '50%', margin: '0 auto'}} src={El} alt="El"/>
+                    </div>
+
+                    <div className="small-12 medium-6 medium-offset-3">
+                        <div className="spaceBar"/>
+                        <img style={{width: '50%', margin: '0 auto'}} src={Sunyani} alt="Sunyani"/>
                     </div>
 
                     <div className="small-12 medium-6 medium-offset-3">

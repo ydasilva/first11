@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/Education-Slide – 3.031b1113.png"
   },
   {
-    "revision": "a6431b17cd0fe9e480b0",
-    "url": "/static/css/main.adfd427a.chunk.css"
+    "revision": "25eaf7a9f4b4a0a6682e",
+    "url": "/static/css/main.e5e929dc.chunk.css"
   },
   {
     "revision": "fbd44cafe1ba8784aad6ddb79c01f121",
     "url": "/static/media/Commu-3.fbd44caf.png"
   },
   {
-    "revision": "9e5d3ddee4701a634fc6",
-    "url": "/static/js/1.9e5d3dde.chunk.js"
+    "revision": "1602c8e0241f075a9c79",
+    "url": "/static/js/1.1602c8e0.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -144,8 +144,8 @@ self.__precacheManifest = [
     "url": "/static/media/Education-Slide – 2.906defeb.png"
   },
   {
-    "revision": "a6431b17cd0fe9e480b0",
-    "url": "/static/js/main.a6431b17.chunk.js"
+    "revision": "25eaf7a9f4b4a0a6682e",
+    "url": "/static/js/main.25eaf7a9.chunk.js"
   },
   {
     "revision": "2503bb8eb5872bd605e128fc67053a50",
@@ -194,6 +194,10 @@ self.__precacheManifest = [
   {
     "revision": "23fd45e501b9d63f71d8b7ccd63e996b",
     "url": "/static/media/Mega.23fd45e5.png"
+  },
+  {
+    "revision": "b52af47649bd94ecb1458e6942e8d93c",
+    "url": "/static/media/Sunyani Business School.b52af476.jpg"
   },
   {
     "revision": "1d7ee2315c62ea75bc036ababe1e5373",
@@ -280,11 +284,11 @@ self.__precacheManifest = [
     "url": "/static/media/Commu-2.83aead83.png"
   },
   {
-    "revision": "9e5d3ddee4701a634fc6",
-    "url": "/static/css/1.29a29db1.chunk.css"
+    "revision": "1602c8e0241f075a9c79",
+    "url": "/static/css/1.9587c0bf.chunk.css"
   },
   {
-    "revision": "1fc4e94d0db3e3667adace668a3972e2",
+    "revision": "989e1f191e35f8b38adcbf739dee4eea",
     "url": "/index.html"
   }
 ];
